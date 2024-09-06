@@ -29,6 +29,13 @@ def main():
     with open('servers.txt', 'r') as f:
         servers = [i.strip() for i in f.readlines()]
 
+    endpoints = {
+        "1": "health",
+        "2": "metrics"
+    }
+
+    endpoint = endpoints[input('Choose option to perform:\n1 - Check health\n2 - Check metrics\n\n')]
+
     for server in servers:
         try:
             name, host, proxy = server.split('|', 2)
@@ -36,7 +43,7 @@ def main():
             proxy = None
             name, host = server.split('|', 1)
 
-        check_data(name, host, config["port"], config["endpoint"], proxy)
+        check_data(name, host, config["port"], endpoint, proxy)
 
 
 if __name__ == '__main__':
