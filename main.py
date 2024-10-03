@@ -98,15 +98,15 @@ def main():
 
     for server in servers:
         try:
-            name, host, proxy = server.split('|', 2)
+            name, host, port, proxy = server.split('|', 3)
         except ValueError:
             proxy = None
-            name, host = server.split('|', 1)
+            name, host, port = server.split('|', 2)
 
         if endpoint == 'web_metrics':
             check_web_metrics(name, proxy)
         else:
-            check_local_logs(name, host, config["port"], endpoint, proxy)
+            check_local_logs(name, host, port, endpoint, proxy)
 
 
 if __name__ == '__main__':
