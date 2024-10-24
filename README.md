@@ -1,7 +1,7 @@
 ## 🚀 Elixir node checker
 Для себя написал, может кому - то будет актуально. Просто кидает HTTP запросы на сервера для проверки здоровья и метрик. Короче, обычный чекер.
 
-<i>Связь с создателем: https://t.me/CrytoBusher</i> <br>
+<i>Связь с создателем: https://t.me/CryptoBusher</i> <br>
 <i>Если ты больше по Твиттеру: https://twitter.com/CryptoBusher</i> <br>
 
 <i>Залетай сюда, чтоб не пропускать дропы подобных скриптов: https://t.me/CryptoKiddiesClub</i> <br>
